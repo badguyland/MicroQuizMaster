@@ -4,12 +4,10 @@ MicroQuizMaster is the smallest version of QuizMaster, ideal for the very weakes
 
 ## Installation
 
-1. Clone this repository:
-   `git clone https://github.com/badguyland/MicroQuizMaster`
+1. Download the Zip file and extract it
    
  2. Enter the directory containing the game executable:
     `cd MicroQuizMaster`
-
 
 ## Quiz Game
 
@@ -17,6 +15,8 @@ MicroQuizMaster is the smallest version of QuizMaster, ideal for the very weakes
 2. Follow the prompts in the terminal to select a quiz file (JSON format).
 3. Answer the questions by typing the number corresponding to your choice.
 4. At the end, your score will be displayed.
+
+   *Note: This version of QuizMaster does not contain any example quizzes.*
 
 ## Quiz Creator
 
