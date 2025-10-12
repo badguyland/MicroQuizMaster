@@ -1,13 +1,19 @@
 # MicroQuizMaster
 
-MicroQuizMaster is the smallest version of QuizMaster, ideal for the very weakest of devices (paticularly if you are a Windows user). No external requirements are needed. MicroQuizMaster allows users to create and play quizzes directly from the terminal.
+MicroQuizMaster is the smallest version of QuizMaster, ideal for the very weakest of devices (paticularly if you are a Windows user). In theory, MicroQuizMaster could even run on a Micro:Bit! No external requirements other than Python are needed. MicroQuizMaster allows users to create and play quizzes directly from the terminal.
 
 ## Installation
 
 1. Download the Zip file and extract it
    
- 2. Enter the directory containing the game executable:
+2. Enter the directory containing the game executable:
     `cd MicroQuizMaster`
+    
+##### Or:
+
+1. Clone this repository: `git clone https://github.com/badguyland/MicroQuizMaster`
+
+2. Enter the directory containing the game executable: `cd MicroQuizMaster`
 
 ## Quiz Game
 
