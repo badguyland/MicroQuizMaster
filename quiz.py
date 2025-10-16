@@ -3,29 +3,7 @@ import random
 import json
 import os
 from glob import glob
-from dataclasses import dataclass, field
-from typing import List, Tuple
-
-
-@dataclass
-class QuizQuestion:
-    question: str
-    correctAnswer: str
-    wrongAnswers: List[str]
-    timeout: int = field(default=10)
-
-    def __repr__(self):
-        return self.question
-
-def load_quiz(filename: str) -> Tuple[List[QuizQuestion], str]:
-    with open(filename, 'r') as file:
-        quizDicts = json.load(file)
-        questionList = []
-        for q in quizDicts["listOfQuestions"]:
-            qq = QuizQuestion(**q)
-            questionList.append(qq)
-        titleofquiz = quizDicts["title"]
-    return questionList, titleofquiz
+from persistence import *
 
 def main():
     print("\nWelcome to MicroQuizMaster")
@@ -63,10 +41,9 @@ def main():
                 if user_answer.isdigit() and 1 <= int(user_answer) <= len(answers):
                     if answers[int(user_answer) - 1] == correct_answer:
                         score += 1
+                    question_index += 1
                 else:
                     print("Invalid choice.")
-
-                question_index += 1
 
                 if question_index >= len(questions):
                     print(f"Quiz completed! Your score: {score}/{len(questions)}")
